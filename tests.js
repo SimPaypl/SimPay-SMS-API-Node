@@ -16,7 +16,16 @@ var api = new simpay.API({key: '333333333333333333', secret: '2222222222222222',
 	err - errory przez simpay
 */
 api.getStatus({serviceId: '41241', number: '7055', code: 'F713EE'}, function(isOk, errorType, err) {
-	console.log(isOk);
-	console.log(errorType);
-	console.log(err);
+	if( !isOk ){
+		if( errorType == 'ERROR' ){
+			console.log( 'API Error' , err );
+		}
+		else if( errorType == 'USED' ){
+			console.log( 'Code used', err );
+		}
+
+		return;
+	}
+
+	console.log( 'API Code accepted' );
 });
