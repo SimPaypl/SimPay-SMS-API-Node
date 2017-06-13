@@ -32,4 +32,4 @@ api.getStatus({serviceId: '41241', number: '7055', code: 'F713EE'}, function(isO
 	}
 
 	console.log( 'API Code accepted' );
-});\
+});
