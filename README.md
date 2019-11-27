@@ -33,3 +33,9 @@ api.getStatus({serviceId: '41241', number: '7055', code: 'F713EE'}, function(isO
 
 	console.log( 'API Code accepted' );
 });
+```
+
+# Kontakt
+W razie jakicholwiek pytań w implementacji , problemów, próśb o dodanie funkcjonalności zachęcamy do kontaktu poprzez:
+
+<kontakt@simpay.pl>
